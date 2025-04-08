@@ -1,5 +1,5 @@
 # Binary Search Writeup
-Summary of challenge: Understand how the binary search algorithm works through the script provided to obtain the required flag
+Summary of challenge: Understand how the binary search algorithm works by analyzing the script provided to obtain the required flag
 
 ## Step 1: Launch the Instance
 We are presented with a brief introduction of the chalenge and a zip file, **challenge.zip** which would be handy later on. However, we need to start the instance to reveal more information in regards to solving the challenge. 
