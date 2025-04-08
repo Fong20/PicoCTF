@@ -29,14 +29,15 @@ We are presented with a brief introduction of the chalenge and a zip file. Howev
 ![Screen Shot 04-07-25 at 10 13 PM 002](https://github.com/user-attachments/assets/c39e4455-66c1-45b0-9964-0a64cb5b124b)
 
 ## Step 3: Analyze the file
-As mentioned earlier, we are presented with a zip file, **challenge.zip** in the challenge page to solve the challenge. 
+- As mentioned earlier, we are presented with a zip file, **challenge.zip** in the challenge page to solve the challenge. 
 
-Download the zip file and unzip the file, we are presented with a script named **guessing_game.sh**
+- Download the zip file and unzip the file, we are presented with a script named **guessing_game.sh**
 
 ![image](https://github.com/user-attachments/assets/f1a12cc6-3b44-42a3-af10-ed14ab140895)
 
-The script shows how the binary search algorithm works which is crucial to understanding how the flag is obtained to solve the challenge.
+- The script shows how the binary search algorithm works which is crucial to understanding how the flag is obtained to solve the challenge.
 
+### How the script works
 There are 4 important variables in the script:
 - target: the targeted number to be guessed which is generated randomly between 1 and 1000
 - MAX_GUESSES: the maximum number of guesses by a player, which is 10
@@ -48,9 +49,9 @@ Once we have understand the function of the variables, we can have a rough hunch
 1. The program will generate a random number between 1 and 1000 and store it in the target variable
 2. The MAX_GUESSES variable is set to 10 so that it limits the player to only 10 attempts in guessing the correct number
 3. The guess_count variable starts from 0
-4. A while loop is used to loop through the player's process of guessing the number. This is done by checking if the value of guess_count is less than MAX_GUESSES which is 10. 
+4. A while loop is used to loop through the player's process of guessing the number where the process will continue to be executed as long as the value of guess_count is less than MAX_GUESSES which is 10. 
 5. The program prompts the user to enter a number and saving it to the guess variable. If the value of the guess variable is less than the target variable value, the program will inform the player that the value is too low. Vice versa, the program will inform the player that the value is too high
-6. If the value of the guess variable is equal to the target variable value, the program will retrieve the flag from the metadata file and provide the flag.
+6. If the value of the guess variable is equal to the target variable value, the program will retrieve the flag from the metadata file and provide the required flag.
 
 ![Screen Shot 04-07-25 at 10 08 PM](https://github.com/user-attachments/assets/fec8a858-873a-41e0-a00a-8a35ecaefb1b)
 
@@ -62,6 +63,10 @@ As we have understood how the algorithm works, it is easier for us to guess the 
 - The next value entered is 900 which is too high. This provided me a crucial information that the number is between 700 and 900.
 - I then tried 800 which is still apparently too high, which provided additional information that the number generated is between 700 and 800
 - I proceeded to try 750 but the value is too low, which provided additional information that the number generated is between 750 and 800
-- 
+- I proceeded to try 770 but the value is too high, which provided additional information that the number generated is between 750 and 770
+- I proceeded to try 755 but the value is too low, which provided additional information that the number generated is between 755 and 770
+- I proceeded to try 760 but the value is still too low, which provided additional information that the number generated is between 760 and 770
+- I proceeded to try 765 but the value is still too low, which provided additional information that the number generated is between 765 and 770
+- Since I already narrowed down the range of numbers to be guessed, which is between 765 and 770, i proceeded to increment the value by 1 which is 766 and managed to obtain the required flag, **picoCTF{g00d_gu355_3af33d18}**
 
 ![Screen Shot 04-07-25 at 10 11 PM](https://github.com/user-attachments/assets/8c44bee8-74a1-4732-b77f-1889f0eefeda)
