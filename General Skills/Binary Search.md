@@ -37,11 +37,31 @@ Download the zip file and unzip the file, we are presented with a script named *
 
 The script shows how the binary search algorithm works which is crucial to understanding how the flag is obtained to solve the challenge.
 
-There are 4 important variables which are as mentioned below:
+There are 4 important variables in the script:
 - target: the targeted number to be guessed which is generated randomly between 1 and 1000
 - MAX_GUESSES: the maximum number of guesses by a player, which is 10
 - guess_count: tracks the number of guesses initiated by the player
 - guess: the value which is guessed by the player by inputting a number
 
+Once we have understand the function of the variables, we can have a rough hunch on how the algoritm works. Below is a brief description on how the algorithm works:
+
+1. The program will generate a random number between 1 and 1000 and store it in the target variable
+2. The MAX_GUESSES variable is set to 10 so that it limits the player to only 10 attempts in guessing the correct number
+3. The guess_count variable starts from 0
+4. A while loop is used to loop through the player's process of guessing the number. This is done by checking if the value of guess_count is less than MAX_GUESSES which is 10. 
+5. The program prompts the user to enter a number and saving it to the guess variable. If the value of the guess variable is less than the target variable value, the program will inform the player that the value is too low. Vice versa, the program will inform the player that the value is too high
+6. If the value of the guess variable is equal to the target variable value, the program will retrieve the flag from the metadata file and provide the flag.
+
 ![Screen Shot 04-07-25 at 10 08 PM](https://github.com/user-attachments/assets/fec8a858-873a-41e0-a00a-8a35ecaefb1b)
 
+## Step 4: Guess the values
+As we have understood how the algorithm works, it is easier for us to guess the number. Based on the script, it stated that a random number is generated between 1 and 1000 so I proceeded by guessing a number between the provided range.
+
+- I started off with a moderate value of 500, which is to low
+- I then proceeded with a higher value of 700, which is still to low
+- The next value entered is 900 which is too high. This provided me a crucial information that the number is between 700 and 900.
+- I then tried 800 which is still apparently too high, which provided additional information that the number generated is between 700 and 800
+- I proceeded to try 750 but the value is too low, which provided additional information that the number generated is between 750 and 800
+- 
+
+![Screen Shot 04-07-25 at 10 11 PM](https://github.com/user-attachments/assets/8c44bee8-74a1-4732-b77f-1889f0eefeda)
