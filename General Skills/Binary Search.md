@@ -2,7 +2,7 @@
 Summary of challenge: Understand how the binary search algorithm works through the script provided to obtain the required flag
 
 ## Step 1: Launch the instance
-We are presented with a brief introduction of the chalenge and a zip file. However, we need to start the instance to reveal more information in regards to solving the challenge. 
+We are presented with a brief introduction of the chalenge and a zip file, **challenge.zip** which would be handy later on. However, we need to start the instance to reveal more information in regards to solving the challenge. 
 
 ![Screen Shot 04-07-25 at 10 09 PM 001](https://github.com/user-attachments/assets/c360715e-c73a-4855-8966-0d60788b56b5)
 
@@ -29,7 +29,7 @@ Once the password has been entered and successfully verified, we will be present
 ![Screen Shot 04-07-25 at 10 13 PM 002](https://github.com/user-attachments/assets/c39e4455-66c1-45b0-9964-0a64cb5b124b)
 
 ## Step 3: Analyze the file
-As mentioned earlier, we are presented with a zip file, **challenge.zip** in the challenge page to solve the challenge. Download and unzip the zip file, and we are presented with a script named **guessing_game.sh**
+Before we could solve the challenge, we need to obtain and analyze the necessary information. As mentioned earlier, we are presented with a zip file, **challenge.zip** in the challenge page to solve the challenge. Download and unzip the zip file, and we are presented with a script named **guessing_game.sh**
 
 ![image](https://github.com/user-attachments/assets/f1a12cc6-3b44-42a3-af10-ed14ab140895)
 
