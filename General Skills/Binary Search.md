@@ -1,7 +1,7 @@
 # Binary Search Writeup
 Summary of challenge: Understand how the binary search algorithm works through the script provided to obtain the required flag
 
-## Step 1: Launch the instance
+## Step 1: Launch the Instance
 We are presented with a brief introduction of the chalenge and a zip file, **challenge.zip** which would be handy later on. However, we need to start the instance to reveal more information in regards to solving the challenge. 
 
 ![Screen Shot 04-07-25 at 10 09 PM 001](https://github.com/user-attachments/assets/c360715e-c73a-4855-8966-0d60788b56b5)
@@ -28,14 +28,14 @@ Once the password has been entered and successfully verified, we will be present
 
 ![Screen Shot 04-07-25 at 10 13 PM 002](https://github.com/user-attachments/assets/c39e4455-66c1-45b0-9964-0a64cb5b124b)
 
-## Step 3: Analyze the file
+## Step 3: Analyze the File
 Before we could solve the challenge, we need to obtain and analyze the necessary information. As mentioned earlier, we are presented with a zip file, **challenge.zip** in the challenge page to solve the challenge. Download and unzip the zip file, and we are presented with a script named **guessing_game.sh**
 
 ![image](https://github.com/user-attachments/assets/f1a12cc6-3b44-42a3-af10-ed14ab140895)
 
 The script shows how the binary search algorithm works which is crucial to understanding how the flag is obtained to solve the challenge.
 
-### How the script works
+### How the Script Works
 There are 4 important variables in the script:
 
 1. target: the targeted number to be guessed which is generated randomly between 1 and 1000
@@ -54,7 +54,7 @@ Once we have understand the function of the variables, we can have a rough hunch
 
 ![Screen Shot 04-07-25 at 10 08 PM](https://github.com/user-attachments/assets/fec8a858-873a-41e0-a00a-8a35ecaefb1b)
 
-## Step 4: Guess the values
+## Step 4: Guess the Number
 As we have understood how the algorithm works, it is easier for us to guess the number. Based on the script, it stated that a random number is generated between 1 and 1000 so I proceeded by guessing a number between the provided range.
 
 - I started off with a moderate value of 500, which is to low
