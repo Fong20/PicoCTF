@@ -44,7 +44,7 @@ There are 4 important variables in the script:
 - guess_count: tracks the number of guesses initiated by the player
 - guess: the value which is guessed by the player by inputting a number
 
-Once we have understand the function of the variables, we can have a rough hunch on how the algoritm works. Below is a brief description on how the algorithm works:
+Once we have understand the function of the variables, we can have a rough hunch on how the algorithm works. Below is a brief description on how the algorithm works:
 
 1. The program will generate a random number between 1 and 1000 and store it in the target variable
 2. The MAX_GUESSES variable is set to 10 so that it limits the player to only 10 attempts in guessing the correct number
@@ -61,12 +61,12 @@ As we have understood how the algorithm works, it is easier for us to guess the 
 - I started off with a moderate value of 500, which is to low
 - I then proceeded with a higher value of 700, which is still to low
 - The next value entered is 900 which is too high. This provided me a crucial information that the number is between 700 and 900.
-- I then tried 800 which is still apparently too high, which provided additional information that the number generated is between 700 and 800
-- I proceeded to try 750 but the value is too low, which provided additional information that the number generated is between 750 and 800
-- I proceeded to try 770 but the value is too high, which provided additional information that the number generated is between 750 and 770
-- I proceeded to try 755 but the value is too low, which provided additional information that the number generated is between 755 and 770
-- I proceeded to try 760 but the value is still too low, which provided additional information that the number generated is between 760 and 770
-- I proceeded to try 765 but the value is still too low, which provided additional information that the number generated is between 765 and 770
-- Since I already narrowed down the range of numbers to be guessed, which is between 765 and 770, i proceeded to increment the value by 1 which is 766 and managed to obtain the required flag, **picoCTF{g00d_gu355_3af33d18}**
+- I then tried 800 which is still apparently too high, indicating that the number generated is between 700 and 800
+- I proceeded to try 750 but the value is too low, indicating that the number generated is between 751 and 800
+- I proceeded to try 770 but the value is too high, indicating that the number generated is between 751 and 769
+- I proceeded to try 755 but the value is too low, indicating that the number generated is between 756 and 769
+- I proceeded to try 760 but the value is still too low, indicating that the number generated is between 761 and 769
+- I proceeded to try 765 but the value is still too low, indicating that the number generated is between 766 and 769
+- Since I already narrowed down the range of numbers to be guessed, which is between 766 and 769, I proceeded to try the value of 766 and managed to obtain the required flag, **picoCTF{g00d_gu355_3af33d18}**
 
 ![Screen Shot 04-07-25 at 10 11 PM](https://github.com/user-attachments/assets/8c44bee8-74a1-4732-b77f-1889f0eefeda)
